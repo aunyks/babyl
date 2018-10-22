@@ -48,9 +48,6 @@ func Encrypt(pub *ecdsa.PublicKey, ephemeral *ecdsa.PrivateKey, in []byte) (out 
 	return
 }
 
-// Decrypt authenticates and recovers the original message from
-// its input using the private key and the ephemeral key included in
-// the message.
 func Decrypt(priv *ecdsa.PrivateKey, in []byte) (out []byte, err error) {
 	ephLen := int(in[0])
 	ephPub := in[1 : 1+ephLen]
