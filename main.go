@@ -119,7 +119,7 @@ func main() {
 	debug := flag.Bool("debug", false, "Debug generates the same node ID on every execution")
 	flag.Parse()
 	if *help {
-		fmt.Printf("This program demonstrates a simple p2p chat application using libp2p\n\n")
+		fmt.Printf("A terminal-based P2P encrypted chat app.\n\n")
 		fmt.Println("Usage: Run 'babyl -sp <SOURCE_PORT>' where <SOURCE_PORT> can be any port number.")
 		fmt.Println("Now run 'babyl -d <MULTIADDR>' where <MULTIADDR> is multiaddress of previous listener host.")
 		os.Exit(0)
